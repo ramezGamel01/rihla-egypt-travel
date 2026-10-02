@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/password.css" />
+
+    <title>Verify Account | Rihla</title>
+  </head>
+
+  <body>
+    <main class="password-page">
+      <section class="password-card">
+        <div class="password-image">
+          <img
+            src="./assets/images/compononet-img.png"
+            alt="Egyptian pyramids and desert"
+          />
+        </div>
+
+        <div class="password-content">
+          <div class="password-wrapper">
+            <a href="./index.html" class="password-logo">
+              <img src="./assets/images/Logo.png" alt="Rihla Egypt Travel" />
+            </a>
+
+            <div class="password-heading">
+              <h1>Verify Your Account</h1>
+              <p>Enter the 4-digit code sent to your phone or email.</p>
+            </div>
+
+            <form
+              action="./reset-password.html"
+              method="get"
+              class="password-form"
+            >
+              <div class="verification-code">
+                <input
+                  type="text"
+                  name="digit1"
+                  maxlength="1"
+                  inputmode="numeric"
+                  aria-label="First verification digit"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="digit2"
+                  maxlength="1"
+                  inputmode="numeric"
+                  aria-label="Second verification digit"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="digit3"
+                  maxlength="1"
+                  inputmode="numeric"
+                  aria-label="Third verification digit"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="digit4"
+                  maxlength="1"
+                  inputmode="numeric"
+                  aria-label="Fourth verification digit"
+                  required
+                />
+              </div>
+
+              <p class="timer">00:30</p>
+
+              <button type="submit" class="main-button">
+                Send Verification Code
+              </button>
+
+              <p class="resend">
+                Didn't receive OTP?
+                <a href="./verify.html">Send Again</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

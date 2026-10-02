@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rihla Egypt Travel booking experience." />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/images/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/booking.css" />
+    <title>Trips | Rihla</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img src="./assets/images/Logo.png" alt="Logo" />
+          <ul class="navLinks">
+            <li><a href="./index.html">Home</a></li>
+            <li class="active"><a href="./trips.html">Trips</a></li>
+            <li><a href="./my-bookings.html">My bookings</a></li>
+          </ul>
+          <div class="authBtns">
+            <a href="./login.html" class="signIn">
+              <i class="fa-regular fa-user"></i>
+              Sign in
+            </a>
+            <a href="./trips.html" class="bookNow">
+              <i class="fa-solid fa-location-dot"></i>
+              Book now
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="listingHero">
+      <div class="container">
+        <span class="listingBadge"><i class="fa-solid fa-bus"></i> Featured Trips</span>
+        <h1>Popular Routes Across Egypt</h1>
+        <p>Hand-picked journeys to Egypt's most iconic destinations<br />with premium comfort and unbeatable prices.</p>
+
+        <form class="listingSearch" action="./trips.html" method="get">
+          <div><i class="fa-solid fa-location-dot"></i><input type="text" placeholder="Where to?" /></div>
+          <div><i class="fa-regular fa-calendar"></i><input type="text" placeholder="DD/MM/YY" /></div>
+          <div><i class="fa-regular fa-user"></i><select><option>1 Traveler</option><option>2 Travelers</option></select></div>
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search Trips</button>
+        </form>
+      </div>
+    </section>
+
+    <main class="tripsMain">
+      <div class="container tripsLayout">
+        <aside class="filtersCard">
+          <div class="filtersTitle">
+            <h2><i class="fa-solid fa-sliders"></i> Filters</h2>
+            <a href="./trips.html">Clear all</a>
+          </div>
+
+          <div class="filterGroup">
+            <h3>Destination</h3>
+            <select><option>All Destinations</option><option>Luxor</option><option>Aswan</option></select>
+          </div>
+
+          <div class="filterGroup">
+            <h3>Price Range</h3>
+            <div class="rangeLine"><span></span></div>
+            <div class="rangeValues"><span>$0</span><span>$200</span></div>
+          </div>
+
+          <div class="filterGroup">
+            <h3>Duration</h3>
+            <label class="activeFilter"><input type="radio" name="duration" checked /> Any duration</label>
+            <label><input type="radio" name="duration" /> Under 4 hours</label>
+            <label><input type="radio" name="duration" /> 4 - 8 hours</label>
+            <label><input type="radio" name="duration" /> Over 8 hours</label>
+          </div>
+
+          <div class="filterGroup">
+            <h3>Trip Types</h3>
+            <div class="typeChips">
+              <span class="active">Popular</span>
+              <span>Express</span>
+              <span>Express</span>
+              <span>Express</span>
+            </div>
+          </div>
+        </aside>
+
+        <section class="tripsResults">
+          <div class="resultsTop">
+            <span><strong>45</strong> trips found</span>
+            <div class="sortControls">
+              <small>sort by:</small>
+              <button class="active">Trending</button>
+              <button>Price</button>
+              <button>Duration</button>
+            </div>
+          </div>
+
+          <article class="tripListCard">
+            <div class="tripListImage">
+              <img src="./assets/images/red-sea.png" alt="Cairo → Hurghada" />
+              <span>Beach</span>
+            </div>
+            <div class="tripListInfo">
+              <h3>Cairo → Hurghada</h3>
+              <p><i class="fa-regular fa-calendar"></i> 2026-04-14 · <i class="fa-regular fa-clock"></i> 12:00 PM · 5h</p>
+              <div class="tripListRating">
+                <span class="starsText">★★★★★</span>
+                <strong>4.9</strong>
+                <small>(234 reviews)</small>
+              </div>
+              <div class="tripTags">
+                <span>Premium Express</span>
+                <span>12 seats left</span>
+              </div>
+              <div class="tripFeatures">
+                <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+                <span><i class="fa-solid fa-wind"></i> A/C</span>
+                <span><i class="fa-solid fa-bolt"></i> USB Charging</span>
+              </div>
+            </div>
+            <div class="tripListAction">
+              <small>from</small>
+              <strong>$35</strong>
+              <span>per seat</span>
+              <a href="./trip-details.html" class="listDetails">View Details</a>
+              <a href="./trip-details.html" class="listBook">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="tripListCard">
+            <div class="tripListImage">
+              <img src="./assets/images/Luxor.png" alt="Cairo → Hurghada" />
+              <span>Beach</span>
+            </div>
+            <div class="tripListInfo">
+              <h3>Cairo → Hurghada</h3>
+              <p><i class="fa-regular fa-calendar"></i> 2026-04-14 · <i class="fa-regular fa-clock"></i> 12:00 PM · 5h</p>
+              <div class="tripListRating">
+                <span class="starsText">★★★★★</span>
+                <strong>4.9</strong>
+                <small>(234 reviews)</small>
+              </div>
+              <div class="tripTags">
+                <span>Premium Express</span>
+                <span>12 seats left</span>
+              </div>
+              <div class="tripFeatures">
+                <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+                <span><i class="fa-solid fa-wind"></i> A/C</span>
+                <span><i class="fa-solid fa-bolt"></i> USB Charging</span>
+              </div>
+            </div>
+            <div class="tripListAction">
+              <small>from</small>
+              <strong>$35</strong>
+              <span>per seat</span>
+              <a href="./trip-details.html" class="listDetails">View Details</a>
+              <a href="./trip-details.html" class="listBook">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="tripListCard">
+            <div class="tripListImage">
+              <img src="./assets/images/siwa.png" alt="Cairo → Hurghada" />
+              <span>Beach</span>
+            </div>
+            <div class="tripListInfo">
+              <h3>Cairo → Hurghada</h3>
+              <p><i class="fa-regular fa-calendar"></i> 2026-04-14 · <i class="fa-regular fa-clock"></i> 12:00 PM · 5h</p>
+              <div class="tripListRating">
+                <span class="starsText">★★★★★</span>
+                <strong>4.9</strong>
+                <small>(234 reviews)</small>
+              </div>
+              <div class="tripTags">
+                <span>Premium Express</span>
+                <span>12 seats left</span>
+              </div>
+              <div class="tripFeatures">
+                <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+                <span><i class="fa-solid fa-wind"></i> A/C</span>
+                <span><i class="fa-solid fa-bolt"></i> USB Charging</span>
+              </div>
+            </div>
+            <div class="tripListAction">
+              <small>from</small>
+              <strong>$35</strong>
+              <span>per seat</span>
+              <a href="./trip-details.html" class="listDetails">View Details</a>
+              <a href="./trip-details.html" class="listBook">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="tripListCard">
+            <div class="tripListImage">
+              <img src="./assets/images/hero.png" alt="Cairo → Hurghada" />
+              <span>Beach</span>
+            </div>
+            <div class="tripListInfo">
+              <h3>Cairo → Hurghada</h3>
+              <p><i class="fa-regular fa-calendar"></i> 2026-04-14 · <i class="fa-regular fa-clock"></i> 12:00 PM · 5h</p>
+              <div class="tripListRating">
+                <span class="starsText">★★★★★</span>
+                <strong>4.9</strong>
+                <small>(234 reviews)</small>
+              </div>
+              <div class="tripTags">
+                <span>Premium Express</span>
+                <span>12 seats left</span>
+              </div>
+              <div class="tripFeatures">
+                <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+                <span><i class="fa-solid fa-wind"></i> A/C</span>
+                <span><i class="fa-solid fa-bolt"></i> USB Charging</span>
+              </div>
+            </div>
+            <div class="tripListAction">
+              <small>from</small>
+              <strong>$35</strong>
+              <span>per seat</span>
+              <a href="./trip-details.html" class="listDetails">View Details</a>
+              <a href="./trip-details.html" class="listBook">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="tripListCard">
+            <div class="tripListImage">
+              <img src="./assets/images/hurghada.png" alt="Cairo → Hurghada" />
+              <span>Beach</span>
+            </div>
+            <div class="tripListInfo">
+              <h3>Cairo → Hurghada</h3>
+              <p><i class="fa-regular fa-calendar"></i> 2026-04-14 · <i class="fa-regular fa-clock"></i> 12:00 PM · 5h</p>
+              <div class="tripListRating">
+                <span class="starsText">★★★★★</span>
+                <strong>4.9</strong>
+                <small>(234 reviews)</small>
+              </div>
+              <div class="tripTags">
+                <span>Premium Express</span>
+                <span>12 seats left</span>
+              </div>
+              <div class="tripFeatures">
+                <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+                <span><i class="fa-solid fa-wind"></i> A/C</span>
+                <span><i class="fa-solid fa-bolt"></i> USB Charging</span>
+              </div>
+            </div>
+            <div class="tripListAction">
+              <small>from</small>
+              <strong>$35</strong>
+              <span>per seat</span>
+              <a href="./trip-details.html" class="listDetails">View Details</a>
+              <a href="./trip-details.html" class="listBook">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+        </section>
+      </div>
+    </main>
+    <footer class="siteFooter">
+      <div class="container">
+        <div class="footerGrid">
+          <div class="footerBrand">
+            <a href="./index.html" class="footerLogo">
+              <span class="footerLogoIcon">
+                <i class="fa-solid fa-bus"></i>
+              </span>
+              <span class="footerLogoText">
+                <strong>Rihla</strong>
+                <small>EGYPT TRAVEL</small>
+              </span>
+            </a>
+
+            <p>
+              Egypt's premier travel platform, connecting you to the most
+              beautiful destinations across the land of the pharaohs.
+            </p>
+
+            <div class="socialLinks">
+              <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footerColumn">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./trips.html">All Trips</a></li>
+              <li><a href="./my-bookings.html">My Bookings</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footerColumn">
+            <h3>Top Destinations</h3>
+            <ul>
+              <li><a href="#">Luxor</a></li>
+              <li><a href="#">Aswan</a></li>
+              <li><a href="#">Hurghada</a></li>
+              <li><a href="#">Siwa Oasis</a></li>
+              <li><a href="#">Alexandria</a></li>
+              <li><a href="#">Sharm El-Sheikh</a></li>
+            </ul>
+          </div>
+
+          <div class="footerContact">
+            <h3>Contact Us</h3>
+
+            <div class="contactList">
+              <div class="contactItem">
+                <span class="contactIcon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <p>
+                  15 Tahrir Square, Cairo,<br />
+                  Egypt
+                </p>
+              </div>
+
+              <div class="contactItem">
+                <span class="contactIcon">
+                  <i class="fa-regular fa-envelope"></i>
+                </span>
+                <a href="mailto:ramizz.gamil@gmail.com">ramizz.gamil@gmail.com</a>
+              </div>
+
+              <div class="contactItem">
+                <span class="contactIcon">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <a href="tel:+201095549690">+20 1095549690</a>
+              </div>
+            </div>
+
+            <div class="newsletter">
+              <p>Subscribe for travel deals</p>
+              <form class="newsletterForm">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  aria-label="Email address"
+                  required
+                />
+                <button type="submit">Join</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <div class="container">
+          <p>© 2026 EgyTrips. All rights reserved.</p>
+          <div class="footerLegal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
