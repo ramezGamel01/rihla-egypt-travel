@@ -29,7 +29,7 @@ export default function Footer() {
             {t("footer.code")}
           </a>
           <p className="footer-by">
-            {t("footer.by")} <a href="https://ramezgamel01.github.io">Ramez Gamel</a>
+            {t("footer.by")} <a href="https://ramezgamel.vercel.app">Ramez Gamel</a>
           </p>
         </div>
       </div>
