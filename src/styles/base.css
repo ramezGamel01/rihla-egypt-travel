@@ -2446,6 +2446,7 @@ input[type="range"]::-moz-range-thumb {
 .pass-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 14px;
 }
 
@@ -3094,7 +3095,7 @@ input[type="range"]::-moz-range-thumb {
 /* ---------- Page transitions ---------- */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: 0.45s;
+  animation-duration: 0.3s;
   animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
