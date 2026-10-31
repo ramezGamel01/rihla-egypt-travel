@@ -27,6 +27,7 @@ export function makeFormat(lang) {
   const locale = lang === "ar" ? "ar-EG" : "en-GB";
   const money = new Intl.NumberFormat(locale, { style: "currency", currency: "EGP", maximumFractionDigits: 0 });
   const number = new Intl.NumberFormat(locale);
+  const percent = new Intl.NumberFormat(locale, { style: "percent", maximumFractionDigits: 0 });
   const time = new Intl.DateTimeFormat(locale, { hour: "2-digit", minute: "2-digit", hour12: lang === "ar" });
   const day = new Intl.DateTimeFormat(locale, { weekday: "short", day: "numeric", month: "short" });
   const longDay = new Intl.DateTimeFormat(locale, { weekday: "long", day: "numeric", month: "long", year: "numeric" });
@@ -37,6 +38,7 @@ export function makeFormat(lang) {
   return {
     money: (v) => money.format(v),
     number: (v) => number.format(v),
+    percent: (v) => percent.format(v),
     time: (v) => time.format(toDate(v)),
     day: (v) => day.format(toDate(v)),
     longDay: (v) => longDay.format(toDate(v)),

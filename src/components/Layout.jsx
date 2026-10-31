@@ -2,6 +2,7 @@ import { Outlet, ScrollRestoration, useNavigation } from "react-router";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Toasts from "./Toasts.jsx";
+import ScrollRail from "./ScrollRail.jsx";
 import { useI18n } from "../i18n/I18n.jsx";
 
 export default function Layout() {
@@ -19,6 +20,7 @@ export default function Layout() {
       </main>
       <Footer />
       <Toasts />
+      <ScrollRail />
       <ScrollRestoration />
     </>
   );
