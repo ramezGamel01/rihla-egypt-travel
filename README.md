@@ -1,4 +1,4 @@
-# Rihla — Egypt Travel
+# Rihla â€” Egypt Travel
 
 Rihla is a responsive multi-page Egyptian travel and bus booking website built using HTML5 and CSS3.
 

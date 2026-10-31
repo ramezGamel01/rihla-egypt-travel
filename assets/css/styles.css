@@ -2190,6 +2190,7 @@ Adventure
 }
 
 .seatSelection {
+  position: relative;
   min-height: 720px;
 }
 
@@ -2212,6 +2213,9 @@ Adventure
 
 .selectionCounter {
   display: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   padding: 6px 10px;
   color: var(--accent);
   background-color: #fff0e8;
@@ -2225,6 +2229,10 @@ Adventure
   display: inline-flex;
   align-items: center;
   gap: 4px;
+}
+
+.bookingForm:has(.seatCheck:checked) .seatSelectionHeading {
+  padding-right: 96px;
 }
 
 .busDriver {
