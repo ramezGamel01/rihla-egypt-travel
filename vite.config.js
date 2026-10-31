@@ -15,8 +15,9 @@ export default defineConfig({
         manualChunks(id) {
           // Vite's preload helper must not land in the three chunk, or every page would preload it
           if (id.includes("preload-helper") || id.includes("commonjsHelpers")) return "react";
-          if (/node_modules[\/](three|@react-three|three-stdlib|react-reconciler|its-fine|zustand|suspend-react|react-use-measure)[\/]/.test(id)) return "three";
-          if (/node_modules[\/](react|react-dom|scheduler|react-router)[\/]/.test(id)) return "react";
+          // Module ids use forward slashes on every platform once Vite normalizes them
+          if (/node_modules\/(three|@react-three|three-stdlib|react-reconciler|its-fine|zustand|suspend-react|react-use-measure)\//.test(id)) return "three";
+          if (/node_modules\/(react|react-dom|scheduler|react-router)\//.test(id)) return "react";
         },
       },
     },
